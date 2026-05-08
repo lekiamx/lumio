@@ -53,7 +53,7 @@
     footer {
       text-align: center; font-size: 0.8rem; color: #888; margin-top: 40px;
     }
-    [lang="en"] { display: none; }
+    [lang="es"] { display: none; }
   </style>
 </head>
 <body>
@@ -64,8 +64,8 @@
 </header>
 
 <div class="lang-switch">
-  <button class="active" onclick="setLang('es')">Español</button>
-  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('es')">Español</button>
+  <button class="active" onclick="setLang('en')">English</button>
 </div>
 
 <!-- ═══════════════════════════ ESPAÑOL ═══════════════════════════ -->
@@ -304,7 +304,7 @@
       btn.classList.toggle('active', btn.textContent.toLowerCase().includes(lang === 'es' ? 'español' : 'english'));
     });
   }
-  setLang('es');
+  setLang('en');
 </script>
 </body>
 </html>
